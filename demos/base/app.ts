@@ -68,6 +68,8 @@ axios({
     a: 1,
     b: 2
   }
+}).then(res => {
+  console.log(res)
 })
 
 axios({
@@ -81,6 +83,8 @@ axios({
     a: 1,
     b: 2
   }
+}).then(res => {
+  console.log(res)
 })
 
 // const arr = new Int32Array([21,32])
@@ -98,5 +102,7 @@ axios({
   method: 'post',
   url: '/base/post',
   data: searchParams
+}).then(res => {
+  console.log(res)
 })
 
