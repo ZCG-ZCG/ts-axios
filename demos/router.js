@@ -5,6 +5,7 @@ registerSimpleRouter()
 registerBaseRouter()
 registerErrorRouter()
 registerExtendRouter()
+registerInterceptorRouter()
 
 function registerSimpleRouter() {
   router.get('/simple/get', (req, res) => {
@@ -99,6 +100,12 @@ function registerExtendRouter() {
         age: 18
       }
     })
+  })
+}
+
+function registerInterceptorRouter() {
+  router.get('/interceptor/get',(req, res) => {
+    res.end('hello')
   })
 }
 
