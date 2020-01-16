@@ -109,4 +109,10 @@ function registerInterceptorRouter() {
   })
 }
 
+function registerConfigRouter() {
+  router.post('/config/post',(req,res) => {
+    res.json(req.body)
+  })
+}
+
 module.exports = router
